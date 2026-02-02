@@ -1,0 +1,10 @@
+# PostgreSQL Database Dumps
+11_env
+__pycache__/
+*.sqlite3
+*.sql
+*.dump
+
+# Local environment variables (Credentials)
+.env
+.env.local

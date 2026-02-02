@@ -1,0 +1,20 @@
+{% extends 'learning_logs/baseclaude.html' %}
+{% load django_bootstrap5 %}
+
+{% block header %}
+	<h2>Log in to your account.</h2>
+{% endblock header %}
+
+{% block content%}
+
+	<form method="post" action="{% url 'users:login' %}" class="form">
+		{% csrf_token %}
+
+		{% bootstrap_form form %}
+
+		<button type="submit" name="submit" class="btn btn-primary">log in</button>
+		
+		<input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
+	</form>
+
+{% endblock content %}
