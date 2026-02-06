@@ -88,7 +88,7 @@ import dj_database_url
 DATABASES = {
    'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:d4t4sonic@127.0.0.1:5432/learning_log',
+        default="postgresql://king:WlwnuwUgd8r9WDLcVNQEaSbWLQ6BVfxR@dpg-d62of2soud1c73d32qf0-a/kingdb",
         conn_max_age=600
         )
 }
