@@ -88,7 +88,7 @@ import dj_database_url
 DATABASES = {
    'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default=os.environ.get("postgresql://king:WlwnuwUgd8r9WDLcVNQEaSbWLQ6BVfxR@dpg-d62of2soud1c73d32qf0-a/kingdb"),
+        default=os.environ.get("postgresql://king:WlwnuwUgd8r9WDLcVNQEaSbWLQ6BVfxR@dpg-d62of2soud1c73d32qf0-a:5432/kingdb"),
         conn_max_age=600,
         ssl_require=True,
         )
