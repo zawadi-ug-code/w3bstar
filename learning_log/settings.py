@@ -86,12 +86,14 @@ import dj_database_url
 
 # Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
-   'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default=os.environ.get("postgresql://king:WlwnuwUgd8r9WDLcVNQEaSbWLQ6BVfxR@dpg-d62of2soud1c73d32qf0-a:5432/kingdb"),
-        conn_max_age=600,
-        ssl_require=True,
-        )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'king',
+        'PASSWORD': 'WlwnuwUgd8r9WDLcVNQEaSbWLQ6BVfxR',
+        'HOST': 'dpg-d62of2soud1c73d32qf0-a',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
