@@ -26,9 +26,9 @@ import os
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [ 'https://w3bstar-learning-resos.onrender.com' ]
+ALLOWED_HOSTS = [ "*" ]
 
 
 # Application definition
